@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bách Khoa Toàn Thư Về Quặng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .ore-card {
+            background-color: #ffffff; /* White card background */
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            overflow: hidden; /* Ensures content respects border radius */
+        }
+        .ore-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .ore-card-header {
+            background-color: #4a5568; /* Darker gray header */
+            color: #ffffff;
+            padding: 1rem 1.25rem;
+            font-size: 1.125rem; /* 18px */
+            font-weight: 600;
+            border-bottom: 1px solid #e2e8f0; /* Light border */
+        }
+        .ore-card-content {
+            padding: 1.25rem;
+        }
+        .ore-formula {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e0f2fe; /* Light blue background for emphasis */
+            padding: 0.5rem 0.75rem; /* Increased padding */
+            border-radius: 0.375rem; /* Slightly more rounded corners */
+            font-size: 1.1rem; /* Increased font size */
+            font-weight: 600; /* Bolder font */
+            color: #0c4a6e; /* Darker blue text color */
+            border: 1px solid #7dd3fc; /* Light blue border */
+            display: inline-block; /* Ensures background and padding are applied correctly */
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        .ore-note {
+            font-size: 0.875rem; /* 14px */
+            color: #4b5563; /* Gray text for notes */
+            margin-top: 0.75rem;
+            font-style: italic;
+        }
+        .section-title {
+            font-size: 1.875rem; /* 30px */
+            font-weight: 700;
+            color: #1f2937; /* Dark gray for section titles */
+            margin-bottom: 1.5rem; /* 24px */
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #d1d5db; /* Light gray border */
+        }
+        .emoji-title {
+            font-size: 2rem; /* Larger emoji */
+            margin-right: 0.75rem;
+        }
+        .container-padding {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .container-padding {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="container mx-auto py-8 container-padding">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-700">📚 Bách Khoa Toàn Thư Về Quặng</h1>
+            <p class="text-lg text-gray-600 mt-2">Khám phá các loại quặng phổ biến và công thức hóa học của chúng.</p>
+        </header>
+
+        <!-- Quặng Sắt -->
+        <section class="mb-12">
+            <h2 class="section-title flex items-center">
+                <span class="emoji-title">🧲</span> Quặng Sắt (Fe)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Hematit đỏ -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Hematit đỏ</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Fe₂O₃ (khan)</span>
+                    </div>
+                </div>
+                <!-- Hematit nâu (Limonit) -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Hematit nâu (Limonit)</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Fe₂O₃·nH₂O</span>
+                    </div>
+                </div>
+                <!-- Manhetit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Manhetit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Fe₃O₄</span>
+                    </div>
+                </div>
+                <!-- Xiderit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Xiderit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">FeCO₃</span>
+                    </div>
+                </div>
+                <!-- Pirit sắt -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Pirit sắt</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">FeS₂</span>
+                        <p class="ore-note">Ghi chú: Không dùng để điều chế Fe do chứa nhiều lưu huỳnh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quặng Nhôm -->
+        <section class="mb-12">
+            <h2 class="section-title flex items-center">
+                <span class="emoji-title">🧪</span> Quặng Nhôm (Al)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Boxit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Boxit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Al₂O₃·nH₂O</span>
+                    </div>
+                </div>
+                <!-- Cryolit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Cryolit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Na₃AlF₆</span>
+                    </div>
+                </div>
+                <!-- Cao lanh -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Cao lanh</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Al₂O₃·2SiO₂·2H₂O</span>
+                    </div>
+                </div>
+                <!-- Mica -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Mica</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">K₂O·Al₂O₃·6SiO₂·2H₂O</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quặng Đồng -->
+         <section class="mb-12">
+            <h2 class="section-title flex items-center">
+                <span class="emoji-title">⚡</span> Quặng Đồng (Cu)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Chancopirit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Chancopirit (pirit đồng)</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">CuFeS₂</span>
+                    </div>
+                </div>
+                <!-- Cuprit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Cuprit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Cu₂O</span>
+                    </div>
+                </div>
+                <!-- Chalcocit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Chalcocit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Cu₂S</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quặng Kali và Natri -->
+        <section class="mb-12">
+            <h2 class="section-title flex items-center">
+                <span class="emoji-title">🧂</span> Quặng Kali và Natri
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Sinvinit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Sinvinit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">NaCl·KCl</span>
+                    </div>
+                </div>
+                <!-- Cacnalit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Cacnalit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">KCl·MgCl₂·6H₂O</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quặng Canxi và Magie -->
+        <section class="mb-12">
+            <h2 class="section-title flex items-center">
+                <span class="emoji-title">🧱</span> Quặng Canxi và Magie
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Canxit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Canxit (đá vôi)</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">CaCO₃</span>
+                    </div>
+                </div>
+                <!-- Đolomit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Đolomit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">CaCO₃·MgCO₃</span>
+                    </div>
+                </div>
+                <!-- Magiezit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Magiezit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">MgCO₃</span>
+                    </div>
+                </div>
+                <!-- Florit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Florit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">CaF₂</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quặng Photpho -->
+        <section class="mb-12">
+            <h2 class="section-title flex items-center">
+                <span class="emoji-title">🌿</span> Quặng Photpho
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Photphorit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Photphorit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">Ca₃(PO₄)₂</span>
+                    </div>
+                </div>
+                <!-- Apatit -->
+                <div class="ore-card">
+                    <div class="ore-card-header">Apatit</div>
+                    <div class="ore-card-content">
+                        <p><strong>Công thức:</strong></p>
+                        <span class="ore-formula">3Ca₃(PO₄)₂·CaF₂</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-gray-600 text-sm">Thông tin được tổng hợp và trình bày bởi Huu</p>
+        </footer>
+    </div>
+</body>
+</html>
